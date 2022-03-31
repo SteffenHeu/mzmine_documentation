@@ -100,8 +100,8 @@ periodic table by hitting the _Setup_ button.
 
 #### **_m/z_ tolerance**
 
-Maximum allowed difference between measured and theoretical isotope _m/z_. It is an [intra-scan _
-m/z_ tolerance](../../terminology/general-terminology.md#intra--and-inter-scan-tolerances). The
+Maximum allowed difference between measured and theoretical isotope _m/z_. It is an 
+[intra-scan _m/z_ tolerance](../../terminology/general-terminology.md#intra--and-inter-scan-tolerances). The
 tolerance can be set in _m/z_, ppm or both. Since mass deviations expressed in ppm are dependent on
 the _m/z_ (_e.g._ higher at low _m/z_ and lower at high _m/z_), MZmine automatically uses the
 largest tolerance.
