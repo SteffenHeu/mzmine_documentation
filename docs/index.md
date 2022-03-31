@@ -17,14 +17,14 @@ Want to get started with MZmine 3? Check out our [getting started](getting_start
 
 ## **What's new compared to MZmine 2?**
 
-MZmine 3 comes with a redesigned and fully customizable [GUI](Main-window-overview.md) based on the
+MZmine 3 comes with a redesigned and fully customizable [GUI](main-window-overview.md) based on the
 JavaFX technology that allow an interactive visualization and validation of results from every
 processing step.
 
 A completely new data structure provides the flexibility to process any type of mass spectrometry,
 including LC-MS, GC-MS and MS-imaging. Moreover, MZmine 3 now support ion mobility, with a
-dedicated [LC-IM-MS data visualization](visualization_modules/ims_raw_data_overview/IM-data-visualisation.md)
-module and [feature detection](workflows/imsworkflow/Ion-mobility-data-processing-workflow.md)
+dedicated [LC-IM-MS data visualization](visualization_modules/ims_raw_data_overview/im-data-visualisation.md)
+module and [feature detection](workflows/imsworkflow/ion-mobility-data-processing-workflow.md)
 algorithms. While offering numerous new data analysis options, significant effort was also devoted
 to trace memory issues and bottlenecks, resulting in an unprecendent processing performance and
 scalability.
@@ -43,7 +43,7 @@ Here you can find documentation for both [processing](module_docs)
 and [visualization](visualization_modules) modules in MZmine 3.
 Moreover, [data processing pipelines](workflows) for
 untargeted [LC-MS](workflows/lcmsworkflow/lcms-workflow.md)
-and [LC-IMS-MS](workflows/imsworkflow/Ion-mobility-data-processing-workflow.md) feature detection
+and [LC-IMS-MS](workflows/imsworkflow/ion-mobility-data-processing-workflow.md) feature detection
 are described and general recommendations are given.
 
 **COMING SOON!** We are currently working on a series of short videotutorials to help get you
@@ -58,4 +58,4 @@ improving existing modules or even adding new featurs in MZmine 3! Please, check
 brief [tutorial](http://mzmine.github.io/development.html).
 
 You can also contribute to this wiki and help new users to get started with MZmine 3!
-See [here](Contribute.md) how to contribute to the documentation.
+See [here](contribute.md) how to contribute to the documentation.

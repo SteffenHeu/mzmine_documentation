@@ -45,8 +45,8 @@ Keep or remove the processed feature list(s).
 Pair MS/MS fragmentation spectra collected
 in [DDA](../../terminology/general-terminology.md#data-dependent-acqusition-mode)
 mode to the resolved features. This is optional at this stage as the same can be done with a
-separate [module](../featdet_MS2_scan_pairing/MS2_scan_pairing.md).
-See [MS2 scan pairing](../featdet_MS2_scan_pairing/MS2_scan_pairing.md) documentation for more
+separate [module](../featdet_MS2_scan_pairing/ms2_scan_pairing.md).
+See [MS2 scan pairing](../featdet_MS2_scan_pairing/ms2_scan_pairing.md) documentation for more
 details.
 
 #### **Dimension**
