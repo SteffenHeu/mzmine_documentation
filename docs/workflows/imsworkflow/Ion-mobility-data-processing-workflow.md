@@ -32,8 +32,8 @@ While these lists might seem fairly similar, there are some differences in the p
 The LC-IMS-MS workflow builds ion mobility traces from the data in the mobility scans, whilst the
 LC-MS workflow builds EICs from the summed frames. For ion mobility data imported from .mzML files,
 accumulated frame spectra have to be built from the individual mobility scans
-after [mass detection](../../module_docs/featdet_mass_detection/mass-detection.md). Since the mass detection
-impacts the computation of accumulated frame spectra in the same way it would impact
+after [mass detection](../../module_docs/featdet_mass_detection/mass-detection.md). Since the mass
+detection impacts the computation of accumulated frame spectra in the same way it would impact
 the [ion mobility trace builder](#lc-ims-ms-workflow), the differences from this workflow and
 the [ADAP workflow](#lc-ms-workflow-recommended) will be negligible.  
 However, frame spectra for native Bruker .tdf raw data are summed by the vendor library during file
@@ -50,20 +50,20 @@ LC-IMS-MS data can also be processed via the regular LC-MS modules. If necessary
 can be expanded into the mobility dimension.
 
 For this workflow, generation of summed frame spectra via
-the [Mobility scan merging](../../module_docs/featdet_mobility_scan_merging/mobility-scan-merging.md) module
-is a mandatory step, if the data was imported from an .mzML file (automatically generated via native
-Bruker import).
+the [Mobility scan merging](../../module_docs/featdet_mobility_scan_merging/mobility-scan-merging.md)
+module is a mandatory step, if the data was imported from an .mzML file (automatically generated via
+native Bruker import).
 
 - [Data import](../../module_docs/io/raw_data_import/data-import.md#lc-ims-ms-data)
 - [Mass detection](../../module_docs/featdet_mass_detection/mass-detection.md#lc-ims-ms-data)
-- [Mobility scan merging](../../module_docs/featdet_mobility_scan_merging/mobility-scan-merging.md) (mzML
-  data)
+- [Mobility scan merging](../../module_docs/featdet_mobility_scan_merging/mobility-scan-merging.md) (
+  mzML data)
 - [ADAP Chromatogram builder](../../module_docs/featdet_adap_chromatogram_builder/adap-chromatogram-builder.md)
 - [Smoothing in retention time dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md)
 - [Resolving in retention time dimension](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md)
 - [Expanding EICs in mobility dimension](../../module_docs/featdet_ims_expander/ims-expander.md)
 - [Smoothing  in mobility dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md#mobility-dimension)
-- [Resolving in mobility dimension](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md#ion-mobility-data)
+- [Resolving in mobility dimension](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md#Resolving the ion mobility dimension)
 - [Smoothing in rt and mobility dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md)
     - Some recognised features might have rather noisy signals (in rt and mobility dimension) after
       the mobility resolving step. If smoother shapes are required, the smoothing can be reapplied
@@ -75,19 +75,19 @@ The LC-IMS-MS workflow will directly
 build [ion mobility traces](../../terminology/ion-mobility-terminology.md#ion-mobility-trace) from
 the raw data in the mobility scans. This workflow does not necessarily require summed frame spectra.
 However, if extracted ion chromatograms shall be visualized via
-the [Chromatogram visualizer](../../visualization_modules/Raw-data-visualisation.md#chromatogram-plot), the frame
-intensities are used. In case these are not present, the chromatograms will be blank. Note that
-feature intensities from the LC-IMS-MS workflow might not exactly match the frame chromatograms due
-to summing being executed prior to thresholding (for native Bruker data). Furthermore, multiple
-isomers might hide behind a single chromatographic peak.
+the [Chromatogram visualizer](../../visualization_modules/Raw-data-visualisation.md#chromatogram-plot)
+, the frame intensities are used. In case these are not present, the chromatograms will be blank.
+Note that feature intensities from the LC-IMS-MS workflow might not exactly match the frame
+chromatograms due to summing being executed prior to thresholding (for native Bruker data).
+Furthermore, multiple isomers might hide behind a single chromatographic peak.
 
 - [Data import](../../module_docs/io/raw_data_import/data-import.md#lc-ims-ms-data)
-- [Mass detection](../../module_docs/featdet_mass_detection/mass-detection.md#lc-ims-ms-data)
+- [Mass detection](../../module_docs/featdet_mass_detection/mass-detection.md)
 - [Ion mobility trace builder](../../module_docs/featdet_ion_mobility_trace_builder/ion-mobility-trace-builder.md)
 - [Smoothing in retention time dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md)
 - [Resolving in retention time dimension](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md)
 - [Smoothing  in mobility dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md#mobility-dimension)
-- [Resolving in mobility dimension](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md#ion-mobility-data)
+- [Resolving in mobility dimension](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md#resolving-the-ion-mobility-dimension)
 - [Smoothing in rt and mobility dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md)
     - Some recognised features might have rather noisy signals (in rt and mobility dimension) after
       the mobility resolving step. If smoother shapes are required, the smoothing can be reapplied
