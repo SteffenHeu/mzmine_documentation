@@ -116,7 +116,7 @@ which results in a tables (often referred to as _feature table_) where samples a
 columns, features in rows and each entry contains the signal intensity detected for the
 corresponding feature, in the corresponding sample.
 
-### Intra- and inter-scan tolerances
+### Intra and inter-scan tolerances
 
 To-do
 
