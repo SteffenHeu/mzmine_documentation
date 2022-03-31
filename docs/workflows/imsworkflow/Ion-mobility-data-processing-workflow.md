@@ -55,7 +55,7 @@ module is a mandatory step, if the data was imported from an .mzML file (automat
 native Bruker import).
 
 - [Data import](../../module_docs/io/raw_data_import/data-import.md#lc-ims-ms-data)
-- [Mass detection](../../module_docs/featdet_mass_detection/mass-detection.md#lc-ims-ms-data)
+- [Mass detection](../../module_docs/featdet_mass_detection/mass-detection.md)
 - [Mobility scan merging](../../module_docs/featdet_mobility_scan_merging/mobility-scan-merging.md) (
   mzML data)
 - [ADAP Chromatogram builder](../../module_docs/featdet_adap_chromatogram_builder/adap-chromatogram-builder.md)
@@ -63,7 +63,7 @@ native Bruker import).
 - [Resolving in retention time dimension](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md)
 - [Expanding EICs in mobility dimension](../../module_docs/featdet_ims_expander/ims-expander.md)
 - [Smoothing  in mobility dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md#mobility-dimension)
-- [Resolving in mobility dimension](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md#Resolving the ion mobility dimension)
+- [Resolving in mobility dimension](../../module_docs/featdet_resolver_local_minimum/local-minimum-resolver.md#Resolving-the-ion-mobility-dimension)
 - [Smoothing in rt and mobility dimension (optional)](../../module_docs/featdet_smoothing/smoothing.md)
     - Some recognised features might have rather noisy signals (in rt and mobility dimension) after
       the mobility resolving step. If smoother shapes are required, the smoothing can be reapplied
