@@ -74,8 +74,7 @@ to be considered valid and retained in the feature list.
 Maximum allowed difference between an EIC-associated _m/z_ and a new data point to be added to the
 existing EIC trace. It is essentially the maximum allowed mass accuracy deviation between
 consecutive data points in the EICs. The tolerance can be set in _m/z_, ppm or both. It is
-an [inter-scan _
-m/z_ tolerance](../../terminology/general-terminology.md#intra--and-inter-scan-tolerances) and it
+an [inter-scan _m/z_ tolerance](../../terminology/general-terminology.md#intra--and-inter-scan-tolerances) and it
 depends on the mass accuracy, resolution and stabiity of the instrument.
 :octicons-light-bulb-16: **Tip**. The best way to optimize this parameter is by manually inspecting
 the the raw data and determining the typical fluctuation of the accurate mass measurement over
