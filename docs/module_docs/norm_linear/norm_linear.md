@@ -1,5 +1,9 @@
 # **Linear normalizer**
 
+!!! warning
+
+    This module was removed in mzmine 4.10. It's functionality was extended moved to the [Intensity normalizer](../norm_intensity/norm_intensity.md).
+
 ## **Description**
 
 :material-menu-open: **Feature list methods → Normalization → Linear normalizer**

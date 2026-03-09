@@ -1,14 +1,23 @@
 # **Standard compound normalizer**
 
+!!! warning
+
+    This module was removed in mzmine 4.10. It's functionality was extended moved to the [Intensity normalizer](../norm_intensity/norm_intensity.md).
+
 ## **Description**
 
 :material-menu-open: **Feature list methods → Normalization → Standard compound normalizer**
 
-The purpose of this module is to reduce the deviation between samples caused by different detection efficiency.
+The purpose of this module is to reduce the deviation between samples caused by different detection
+efficiency.
 
-Internal standard peaks must be present in the detected samples. User can select one or multiple internal standard peaks, which must be present in all raw data files. Then peak height (or area) of each peak is normalized by either the **nearest standard** or a **weighted contribution** of all standards.
+Internal standard peaks must be present in the detected samples. User can select one or multiple
+internal standard peaks, which must be present in all raw data files. Then peak height (or area) of
+each peak is normalized by either the **nearest standard** or a **weighted contribution** of all
+standards.
 
-In case a weighted contribution is used, the contributions of all standards are weighted by distance. The distance of the standard peak to the peak being normalized is calculated as
+In case a weighted contribution is used, the contributions of all standards are weighted by
+distance. The distance of the standard peak to the peak being normalized is calculated as
 
 $$distance = MZvsRT_{Balance} * MZ_{difference} + RT_{difference}$$
 
@@ -24,11 +33,13 @@ Suffix to be added to a processed feature list name
 
 #### **Normalization type**
 
-Normalize intensities using either only one (nearest) standard or using a weighted contribution of all selected standards, weighted by distance.
+Normalize intensities using either only one (nearest) standard or using a weighted contribution of
+all selected standards, weighted by distance.
 
 #### **Feature measurement type**
 
-Selection of either feature height or feature area, which will be used to calculate the normalization factors
+Selection of either feature height or feature area, which will be used to calculate the
+normalization factors
 
 #### **m/z vs RT balance**
 
