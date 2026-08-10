@@ -47,7 +47,7 @@ nav:
           - Mass detection: module_docs/featdet_mass_detection/mass-detection.md
           - Mass detection algorithms: module_docs/featdet_mass_detection/mass-detection-algorithms.md
           - FTMS shoulder peak finder: module_docs/featdet_mass_detection/FTMS-shoulder-peak-filter.md
-          - Mass calibration: module_docs/featdet_mass_detection/mass-calibration.md
+          - Mass calibration: module_docs/featdet_mass_calibration/mass-calibration.md
       - LC-MS feature detection:
           - Chromatogram builder: module_docs/lc-ms_featdet/featdet_adap_chromatogram_builder/adap-chromatogram-builder.md
           - MSn tree builder: module_docs/featuredet_msn_tree/msn_tree_builder.md
