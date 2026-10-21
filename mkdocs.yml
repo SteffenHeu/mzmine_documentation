@@ -197,6 +197,8 @@ nav:
       - SIMSEF: workflows/simsef/simsef_workflow.md
       - MRM workflow: workflows/mrmworkflow/mrm-workflow.md
       - Workflow optimization: workflows/optimization/workflow_optimization.md
+      - Estimate wizard parameters: workflows/optimization/wizard_estimate.md
+      - Optimize wizard parameters: workflows/optimization/wizard_optimize.md
 
   - Tools:
       - SIMSEF scheduler: module_docs/tools_simsef/simsef.md

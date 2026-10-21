@@ -11,6 +11,12 @@ you were expecting, you have to pinpoint which step omits the expected feature(s
     We recommend to apply the optimization to a representative subset of your dataset. A good starting
     point are usually pooled QC or other representative samples.
 
+!!! tip
+
+    The wizard can estimate and optimize many of its parameters automatically from the raw data.
+    See [Estimate wizard parameters](wizard_estimate.md) and
+    [Optimize wizard parameters](wizard_optimize.md).
+
 ### Making your workflow "optimization ready"
 
 To pinpoint which steps need to be optimized, you must first keep the **intermediate results** of

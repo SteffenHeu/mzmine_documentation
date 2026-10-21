@@ -360,10 +360,14 @@ Click on "OK" to start the processing.
 
 While the presets of the processing wizard will produce good results out of the box for many 
 instrument types and combinations, it may be worth optimizing specific workflow steps to achieve 
-even better results. There are two ways to optimize the wizard workflow.
+even better results. There are three ways to optimize the wizard workflow.
 
-1. By optimizing the parameters in the wizard steps.
-2. By optimizing individual steps in the [created batch](#8-create-batch).
+1. Automatically, with the **Estimate** and **Optimize** buttons in the wizard header. They derive
+   parameters from representative raw data files, see
+   [Estimate wizard parameters](workflows/optimization/wizard_estimate.md) and
+   [Optimize wizard parameters](workflows/optimization/wizard_optimize.md).
+2. By optimizing the parameters in the wizard steps.
+3. By optimizing individual steps in the [created batch](#8-create-batch).
 
 A step-by-step approach is detailed in the 
 [workflow optimization guide](workflows/optimization/workflow_optimization.md).
