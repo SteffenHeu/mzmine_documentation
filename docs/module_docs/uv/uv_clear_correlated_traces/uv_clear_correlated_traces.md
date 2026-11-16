@@ -12,8 +12,12 @@
 features from the selected feature lists. Use it when a correlation was run with unsuitable trace
 selection, retention-time shift, tolerance, or score threshold and you want to recreate the links.
 
-The module preserves the MS feature list, raw traces, preprocessed traces, and resolved
-other-detector features. It only clears the **Correlated traces** results attached to each feature.
+The module preserves the MS feature list, raw traces, preprocessed traces, resolved other-detector
+features, and the
+[aligned other detector rows](../uv_other_feature_aligner/uv_other_feature_aligner.md). It only
+clears the correlations between MS rows and aligned rows, including manual correlations from the
+[Correlation dashboard](../uv_correlation_dashboard/uv_correlation_dashboard.md). See
+[Other detector data: before and after alignment](../otherdetector_data_handling.md).
 
 ## Parameters
 
@@ -26,8 +30,9 @@ modified in place.
 
 After clearing correlations, correct any retention-time offset with
 [Shift, trim, and bin traces](../uv_shift_trim_bin_traces/uv_shift_trim_bin_traces.md) if needed,
-then run [Correlate MS features with other detectors](../uv_ms_other_aligner/uv_ms_other_aligner.md)
-again. Use the [Correlation dashboard](../uv_correlation_dashboard/uv_correlation_dashboard.md) to
+then run [Align other detector features](../uv_other_feature_aligner/uv_other_feature_aligner.md)
+and [Correlate MS features with other detectors](../uv_ms_other_aligner/uv_ms_other_aligner.md)
+again. Only the correlation has to be repeated if the alignment is still valid. Use the [Correlation dashboard](../uv_correlation_dashboard/uv_correlation_dashboard.md) to
 inspect or manually adjust the new assignments.
 
 ---

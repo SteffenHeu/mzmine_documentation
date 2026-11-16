@@ -12,6 +12,18 @@ e.g., [LC-MS](../../../workflows/lcmsworkflow/lcms-workflow.md), to features fro
 traces, allowing you to find which MS features are behind a certain peak in the UV, CAD, or
 radioactivity chromatograms.
 
+The MS features are correlated to the aligned other detector features of the feature list. Run
+[Align other detector features](../uv_other_feature_aligner/uv_other_feature_aligner.md) first,
+otherwise this module stops with an error. The correlations link MS feature list rows to aligned
+other detector rows, see
+[Other detector data: before and after alignment](../otherdetector_data_handling.md) for details.
+
+!!! warning
+
+    Running this module again replaces all correlations of the feature list, including manual
+    correlations from the
+    [Correlation dashboard](../uv_correlation_dashboard/uv_correlation_dashboard.md).
+
 ## Parameters
 
 ![img.png](parameters.png)
@@ -19,16 +31,12 @@ radioactivity chromatograms.
 #### Feature lists
 
 Select the feature list you want to correlate the other traces for. Each MS data file in the
-selected feature list(s) will only be correlated to other detector features of it's own file. The
-selected feature list may be an aligned feature list.
+selected feature list(s) will only be correlated to the aligned other detector features of its own
+file. The selected feature list may be an aligned feature list.
 
-#### Trace selection
-
-Select the specific traces you want to correlate to the MS features. Typically, it is not necessary
-to correlate all existing traces.
-
-For a detailed description of all sub-parameters
-see [trace selection parameter](../otherdetector_glossary.md#trace-selection-parameter).
+The traces are selected in
+[Align other detector features](../uv_other_feature_aligner/uv_other_feature_aligner.md): all
+aligned features are candidates for the correlation.
 
 #### RT tolerance
 
@@ -46,10 +54,16 @@ Set a minimum (Pearson) correlation factor between the chromatographic shape of 
 
 ## Results
 
-If correlated traces are found, the "Correlated traces" column will be added to the feature table. (
-Not visible by default) You can enable it by clicking the "+" in the upper right corner of the
-feature table and selecting the "Features:Correlated traces" type and the sub columns you want to
-see.
+The module adds two columns to the feature table. If they are not visible, enable them by clicking
+the "+" in the upper right corner of the feature table.
+
+- **Correlated traces** (row level): all aligned other detector rows correlated to the MS row,
+  sorted by their best correlation score. The first entry is the **preferred trace**. Edit the cell
+  to choose another preferred trace.
+- **Correlated trace** (feature level): the peak of the preferred trace in this raw data file and
+  its status: **Calculated** (with the Pearson score), **Manual** (set in the correlation
+  dashboard), or **Aligned** (the preferred trace has a peak in this file, but this file's MS
+  feature did not correlate to it).
 
 ![correlated_traces_cols.png](correlated_traces_cols.png)
 
@@ -60,5 +74,5 @@ allows a deeper investigation and also manually assigning or removing the correl
 
 Use [Clear correlated traces](../uv_clear_correlated_traces/uv_clear_correlated_traces.md)
 to remove every stored other-detector correlation from selected feature lists. This does not delete
-raw traces, resolved other-detector features, or MS features; it only clears the links created by
-this module or assigned in the correlation dashboard.
+raw traces, resolved other-detector features, aligned other detector rows, or MS features; it only
+clears the links created by this module or assigned in the correlation dashboard.
